@@ -186,6 +186,10 @@ Mode pengembangan: `npx react-native start` lalu `npx react-native run-android`.
 
 Build release ditandatangani debug keystore bawaan template — cukup untuk sideload uji.
 
+**Windows:** build C++ new architecture membuat path yang sangat panjang dan gagal dengan
+`ninja: error: ... Filename longer than 260 characters` kalau project ada di folder yang dalam.
+Clone ke path pendek (mis. `D:\b\rnw`) atau aktifkan *long paths* Windows sebelum build.
+
 ---
 
 ## Struktur project
