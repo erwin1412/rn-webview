@@ -29,5 +29,5 @@ test('layar awal tampil dengan preset & tombol buka', async () => {
   const texts = tree.root
     .findAll(n => typeof n.props.children === 'string')
     .map(n => n.props.children);
-  expect(texts).toEqual(expect.arrayContaining(['Buka webview', 'Base URL webview', 'Default RN', 'Disarankan', 'Bawaan RN']));
+  expect(texts).toEqual(expect.arrayContaining(['Buka webview', 'Base URL', 'Default RN', 'Disarankan', 'Bawaan RN']));
 });
